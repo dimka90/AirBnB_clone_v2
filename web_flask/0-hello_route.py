@@ -7,9 +7,10 @@ from flask import Flask
 
 # Create a Flask application instance
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 
 # Decorate the entry point route
-@app.route("/", strict_slashes = False)
+@app.route("/")
 def entry() -> str:
     """
     Handle requests to the root URL ("/").
