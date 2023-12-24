@@ -3,6 +3,7 @@
 This module implements a simple Flask web application.
 """
 from flask import Flask
+from markupsafe import escape
 
 # Create a Flask application instance
 app = Flask(__name__)
@@ -41,8 +42,9 @@ def vairble(text):
     Returns:
     - str: C + string passed
     """
+    formated_text = text.replace('_', ' ')
 
-    return 'C {}'.format(text)
+    return 'C {}'.format(formated_text)
 
 
 if __name__ == "__main__":
