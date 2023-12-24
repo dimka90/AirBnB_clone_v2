@@ -6,10 +6,10 @@ from flask import Flask
 
 # Create a Flask application instance
 app = Flask(__name__)
-app.url_map.strict_slashes = False
+
 
 # Decorate the entry point route
-@app.route("/")
+@app.route("/", strict_slashes=False)
 def entry():
     """
     Handle requests to the root URL ("/").
@@ -19,6 +19,7 @@ def entry():
     """
 
     return 'Hello HBNB!'
+
 
 if __name__ == "__main__":
     # Run the Flask application on host "0.0.0.0" and port 5000
