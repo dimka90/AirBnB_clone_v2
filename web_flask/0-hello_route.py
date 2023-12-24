@@ -7,6 +7,7 @@ from flask import Flask
 
 # Create a Flask application instance
 app = Flask(__name__)
+app.url_map.strict_slashes = False
 
 # Decorate the entry point route
 @app.route("/")
