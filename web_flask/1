@@ -1,10 +1,31 @@
-#!/usr/bin/python3
 """
 This module implements a simple Flask web application.
 
 """
 
 from flask import Flask
+
+class MyApp:
+    """
+    MyApp class represents a simple Flask web application.
+
+    """
+
+    def __init__(self, name):
+        """
+        Initialize the MyApp object.
+
+        Args:
+        - name (str): The name of the Flask application.
+        """
+
+    def entry() -> str:
+        """
+        Handle requests to the root URL ("/").
+
+        Returns:
+        - str: A greeting message, "Hello HBNB!"
+        """
 
 # Create a Flask application instance
 app = Flask(__name__)
@@ -18,8 +39,6 @@ def entry() -> str:
     Returns:
     - str: A greeting message, "Hello HBNB!"
     """
-
-    return 'Hello HBNB!'
 
 if __name__ == "__main__":
     # Run the Flask application on host "0.0.0.0" and port 5000
