@@ -10,7 +10,7 @@ app.url_map.strict_slashes = False
 
 # Decorate the entry point route
 @app.route("/")
-def entry() -> str:
+def entry():
     """
     Handle requests to the root URL ("/").
 
