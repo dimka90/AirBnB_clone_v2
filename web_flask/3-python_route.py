@@ -46,8 +46,9 @@ def cvairable(text):
     return 'C {}'.format(formated_text)
 
 
+@app.route('/python/', defaults={'text': 'is cool'}, strict_slashes=False)
 @app.route('/python/<text>')
-def pythonvairable(text):
+def pythonvairable(text="is cool"):
     """
     Handle requests to the Python variable path
 
