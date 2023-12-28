@@ -79,7 +79,7 @@ def sendInteger(n):
     Returns:
     - html: a html page
     """
-    ctxt = {'n': n, 'title': "HBNB"}
+    ctxt = {'number': n, 'title': "HBNB"}
     return render_template("5-number.html",
                            **ctxt)
 
