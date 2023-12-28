@@ -79,9 +79,9 @@ def sendInteger(n):
     Returns:
     - html: a html page
     """
+    ctxt = {'n': n, 'title': "HBNB"}
     return render_template("5-number.html",
-                           title="HBNB",
-                           number=n,)
+                           **ctxt)
 
 
 if __name__ == "__main__":
