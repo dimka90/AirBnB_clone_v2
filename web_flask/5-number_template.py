@@ -80,7 +80,7 @@ def sendInteger(n):
     - html: a html page
     """
     return render_template("5-number.html",
-                           title="Number, Sent from Flask app",
+                           title="HBNB",
                            number=n,)
 
 
