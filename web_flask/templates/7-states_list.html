@@ -4,11 +4,11 @@
         <TITLE>{{ title }}</TITLE>
     </HEAD>
     <BODY>
-        <H1>{{ header_title}}</H1>
-        <ul id="navigation">
+        <H1>{{ header_title }}</H1>
+        <UL>
     {% for item in State %}
-        <li>{{ item.id }}: <b>{{ item.name }}</b></li>
+        <LI>{{ item.id }}: <B>{{ item.name }}</B></LI>
     {% endfor %}
-    </ul>
+    </UL>
     </BODY>
 </HTML>

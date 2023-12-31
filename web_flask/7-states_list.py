@@ -31,12 +31,11 @@ def list_state():
     # store the sorted list in a dictionary
     dict_obj = {"State": state_object, "title": "HBNB",
                 "header_title": "States"}
-
     return render_template("7-states_list.html", **dict_obj)
 
 
 @app.teardown_appcontext
-def flask_teardown(exc):
+def flask_teardown(exception):
     '''The Flask app/request context end event listener.'''
     storage.close()
 
