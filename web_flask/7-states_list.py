@@ -29,8 +29,9 @@ def list_state():
     # ascending order
     state_object.sort(key=lambda obj: obj.name)
     # store the sorted list in a dictionary
-    dict_obj = {"State": state_object, "title": "HBNB",
+    dict_obj = {"states": state_object, "title": "HBNB",
                 "header_title": "States"}
+
     return render_template("7-states_list.html", **dict_obj)
 
 

@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <HTML lang="en">
-    <HEAD>
-        <TITLE>{{ title }}</TITLE>
-    </HEAD>
-    <BODY>
-        <H1>{{ header_title }}</H1>
-        <UL>
-    {% for item in State %}
-        <LI>{{ item.id }}: <B>{{ item.name }}</B></LI>
-    {% endfor %}
+<HEAD>
+    <META charset="UTF-8">
+    <META http-equiv="X-UA-Compatible" content="IE=edge">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>States - AirBnB Clone</TITLE>
+</HEAD>
+<BODY>
+    <H1>States</H1>
+    <UL>
+        {% for state in states %}
+        <LI>{{ state.id }}: <B>{{ state.name }}</B></LI>
+        {% endfor %}
     </UL>
-    </BODY>
+</BODY>
 </HTML>
+
