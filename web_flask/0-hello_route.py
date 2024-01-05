@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module implements a simple Flask web application.
-"""
+"""This module implements a simple Flask web application."""
 from flask import Flask
 
 # Create a Flask application instance
